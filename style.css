@@ -1,0 +1,151 @@
+.contact-title {
+ text-align: center;
+ color: #13B31A;
+ font-size: 2.5rem;
+ margin-top: 20px;
+ margin-bottom: 30px;
+}
+.contact-container {
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+ gap: 30px;
+ margin-bottom: 40px;
+}
+
+.contact-form-section {
+ background: #13B31A;
+ border-radius: 28px;
+ padding: 30px 25px 30px 25px;
+ min-width: 350px;
+ max-width: 370px;
+ color: #fff;
+ display: flex;
+ flex-direction: column;
+ gap: 18px;
+ box-shadow: 0 3px 16px rgba(0, 0, 0, 0.12);
+}
+
+.contact-form-section h2 {
+ margin: 0 0 8px 0;
+ font-size: 1.3rem;
+ font-weight: 600;
+}
+
+.support-text {
+ font-size: 1rem;
+ margin-bottom: 12px;
+}
+
+.contact-form {
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+ border: none;
+ border-radius: 25px;
+ padding: 11px 18px;
+ font-size: 1rem;
+ outline: none;
+ margin: 0;
+}
+
+
+
+.contact-form textarea {
+ border-radius: 18px;
+ resize: none;
+ min-height: 90px;
+}
+
+.submit-btn {
+ background: #FF8C1A;
+ color: #fff;
+ border: none;
+ border-radius: 6px;
+ padding: 11px 0;
+ font-size: 1.05rem;
+ font-weight: bold;
+ cursor: pointer;
+ transition: background 0.2s;
+}
+
+.submit-btn:hover {
+ background: #E67600;
+}
+.contact-map-section {
+ width: 370px;
+ height: 485px;
+ background: #EAEAEA;
+ border-radius: 18px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ overflow: hidden;
+}
+.contact-map-img {
+ width: 100%;
+ object-fit: cover;
+ border-radius: 18px;
+ filter: grayscale(70%);
+}
+
+@media (max-width: 992px) {
+ .contact-container {
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;
+ }
+  .contact-form-section,
+ .contact-map-section {
+   min-width: 300px;
+   max-width: 90vw;
+   width: 100%;   
+ }
+  .contact-map-section {
+   height: auto;
+ }
+  .contact-map-img {
+   height: 300px;
+   object-fit: cover;
+ }
+}
+
+
+
+
+@media (max-width: 600px) {
+ .contact-title {
+   font-size: 2rem;
+   margin-top: 15px;
+   margin-bottom: 20px;
+ }
+
+
+ .contact-form-section,
+ .contact-map-section {
+   max-width: 100%;
+   min-width: auto;
+   padding: 20px 15px;
+ }
+
+
+ .contact-form-section {
+   padding: 20px 15px;
+ }
+  .contact-form input,
+ .contact-form textarea {
+   font-size: 0.9rem;
+   padding: 10px 15px;
+ }
+  .submit-btn {
+   font-size: 1rem;
+   padding: 10px 0;
+ }
+  .contact-map-img {
+   height: 250px;
+ }
+}
