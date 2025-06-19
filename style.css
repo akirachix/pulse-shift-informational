@@ -1,3 +1,23 @@
+@font-face {
+    font-family: nunito;
+    src: url(fonts/static/Nunito-Bold.ttf);
+}
+
+@font-face {
+    font-family: nunito-reg;
+    src: url(fonts/static/Nunito-Medium.ttf);
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: nunito-reg;
+    background: #fff;
+    color: #222;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
 .contact-title {
  text-align: center;
  color: #13B31A;
@@ -11,25 +31,41 @@
  align-items: flex-start;
  gap: 30px;
  margin-bottom: 40px;
+ 
+ overflow: hidden;
+
+
 }
 
 .contact-form-section {
  background: #13B31A;
- border-radius: 28px;
+ border-radius: 80px;
  padding: 30px 25px 30px 25px;
- min-width: 350px;
- max-width: 370px;
+ min-width: 400px;
+ max-width: 460px;
+ height: 560px;
+ width: 460px;
+ min-height: 485px;
+ max-height: 590px;
  color: #fff;
  display: flex;
  flex-direction: column;
- gap: 18px;
+ gap: 10px;
  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.12);
+ box-sizing: border-box;
+
 }
 
 .contact-form-section h2 {
  margin: 0 0 8px 0;
  font-size: 1.3rem;
  font-weight: 600;
+ margin-left: 5%;
+}
+
+.contact-form-section p {
+ margin-top: -2%;
+ margin-left: 5%;
 }
 
 .support-text {
@@ -46,8 +82,8 @@
 .contact-form input,
 .contact-form textarea {
  border: none;
- border-radius: 25px;
- padding: 11px 18px;
+ border-radius: 20px;
+ padding: 11px 12px;
  font-size: 1rem;
  outline: none;
  margin: 0;
@@ -56,9 +92,9 @@
 
 
 .contact-form textarea {
- border-radius: 18px;
  resize: none;
- min-height: 90px;
+ min-height: 150px;
+ 
 }
 
 .submit-btn {
@@ -71,20 +107,29 @@
  font-weight: bold;
  cursor: pointer;
  transition: background 0.2s;
+ width: 100px;
+ margin-left: 38px;
+ margin-top: 1%;
 }
 
 .submit-btn:hover {
  background: #E67600;
 }
 .contact-map-section {
- width: 370px;
- height: 485px;
+min-width: 400px;
+ max-width: 460px;
+ height: 560px;
+ width: 460px;
+ min-height: 485px;
+ max-height: 590px;
+ box-sizing: border-box;
  background: #EAEAEA;
  border-radius: 18px;
  display: flex;
  align-items: center;
  justify-content: center;
  overflow: hidden;
+ border-radius: 50px;
 }
 .contact-map-img {
  width: 100%;
@@ -92,6 +137,19 @@
  border-radius: 18px;
  filter: grayscale(70%);
 }
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px; 
+}
+
+.contact-form label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0; 
+  margin-left: 5%;
+}
+
 
 @media (max-width: 992px) {
  .contact-container {
