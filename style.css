@@ -41,7 +41,7 @@ body {
     gap: 32px;
     padding: 0 16px;
     flex-wrap: wrap;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
 }
 
@@ -49,8 +49,8 @@ body {
     background: none;
     color: #fff;
     width: 390px;
-    min-width: 210px;
-    max-width: 390px;
+    /* min-width: 210px; */
+    /* max-width: 390px; */
     text-align: center;
     padding: 22px 19px 18px 19px;
     border-radius: 30px;
