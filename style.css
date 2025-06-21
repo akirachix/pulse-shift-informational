@@ -180,3 +180,10 @@
    height: 40px;
   }
 }
+@media (max-width: 1400px) {
+  .about-card{
+    width: 20px;
+    font-size: 10px;
+    height: 10px;
+  }
+}
